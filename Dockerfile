@@ -1,5 +1,7 @@
 ARG VERSION="2"
 
+LABEL org.opencontainers.image.source = "https://github.com/leopoldlabs/caddypold"
+
 FROM caddy:${VERSION}-builder AS builder
 
 RUN xcaddy build \
